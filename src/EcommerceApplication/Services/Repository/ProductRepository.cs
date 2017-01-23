@@ -31,12 +31,12 @@ namespace EcommerceApplication.Services.Repository
 
         public IEnumerable<Product> GetAll()
         {
-            return _db.Product.Select(c => c);
+            return _db.Product.Select(p => p);
         }
 
         public Product GetById(int id)
         {
-            return _db.Product.SingleOrDefault(c => c.ProductId == id);
+            return _db.Product.FirstOrDefault(p => p.ProductId == id);
         }
 
         public void Insert(Product prod)

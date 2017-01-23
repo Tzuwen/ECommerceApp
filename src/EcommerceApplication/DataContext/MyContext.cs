@@ -21,7 +21,7 @@ namespace EcommerceApplication.DataContext
         public DbSet<OrderLine> OrderLine { get; set; }
         public DbSet<Picture> Picture { get; set; }
         public DbSet<Product> Product { get; set; }
-        public DbSet<SubCategory> SubCategoy { get; set; }
+        public DbSet<SubCategory> SubCategory { get; set; }
         
     }
 }
